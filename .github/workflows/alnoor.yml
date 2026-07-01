@@ -1,0 +1,14 @@
+name: datacom workflow action
+
+on: [push]
+
+env:
+  alnoor_variable: "This is my variable"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print variable
+        run: |
+          echo "Variable: $alnoor_variable"
